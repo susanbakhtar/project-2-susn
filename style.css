@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-  min-height: 100vh;
+  min-height: 100%;
   padding: 1vw calc(var(--vw) * 2.5vw);
   padding-bottom: 0;
 
