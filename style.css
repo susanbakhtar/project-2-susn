@@ -146,11 +146,6 @@ header i {
 }
 
 .bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: orangered;
   height: calc(100% - 40%);
 }
 
