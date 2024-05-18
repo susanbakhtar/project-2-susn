@@ -20,9 +20,9 @@ body {
   overflow-y: auto;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-} */
+}
 
 :root {
   --vw: 1;
@@ -81,7 +81,9 @@ header i {
 }
 
 .main-2 {
-  height: calc(100vh - calc(var(--vw) * 5vw) - calc(var(--vw) * 12vw) - 1vw);
+  height: calc(
+    100vh - calc(var(--vw) * 5vw) - calc(var(--vw) * 12vw) - 1vw - 1vw
+  );
 
   display: flex;
   flex-flow: column;
@@ -91,7 +93,7 @@ header i {
 /* center-container */
 .center {
   /* height: calc(var(--vw) * 12vw); */
-  height: 40%;
+  height: calc(var(--vw) * 12vw);
 }
 
 /* center-top */
@@ -146,7 +148,7 @@ header i {
 }
 
 .bottom {
-  height: calc(100% - 40%);
+  height: calc(100% - calc(var(--vw) * 12vw));
 }
 
 figure {
@@ -201,10 +203,8 @@ img {
 
     height: calc(var(--vw) * 19vw);
   }
+
   .bottom {
-    height: calc(
-      100vh - calc(var(--vw) * 5vw) - calc(var(--vw) * 12vw) -
-        calc(var(--vw) * 19vw) - 1vw - 1rem
-    );
+    height: calc(100% - calc(var(--vw) * 19vw));
   }
 }
